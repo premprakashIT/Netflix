@@ -1,13 +1,149 @@
 <!doctype html>
 <html>
-    <head>
-        <title>DropDown Assignment</title>
-        <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
-        <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
-    </head>
-    <body class="container-fluid">
-       
-        <script src="/node_modules/jquery/dist/jquery.js"></script>
-        <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
-    </body>
+
+<head>
+    <title>DropDown Assignment</title>
+    <link rel="stylesheet" href="/node_modules/bootstrap-icons/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="/node_modules/bootstrap/dist/css/bootstrap.css">
+    <style>
+        body {
+            background-image: url(../assets/netflix_back.jpg);
+            background-size: cover;
+            color: white;
+            background-color: black;
+        }
+
+        .backcolor {
+
+            width: 100%;
+            height: 1050px;
+            background-color: rgba(0, 0, 0, 0.6);
+        }
+
+        .main-title {
+            margin-top: 100px;
+            font-family: arial;
+            font-size: 50px;
+            font-weight: bold;
+            width: 600px;
+
+
+
+        }
+
+        .main-subtitle {
+            font-size: 35px;
+            font-family: arial;
+
+        }
+
+        .register-title {
+            font-size: 20px
+        }
+    </style>
+</head>
+
+<body>
+    <div class="backcolor">
+        <header class="d-flex justify-content-between p-3">
+            <div>
+                <img src="../assets/Netflix_logo.PNG" width="190px" height="70px">
+            </div>
+            <div class="d-flex">
+
+                <div class="dropdown me-3">
+                    <button class="btn btn-danger dropdown-toggle" data-bs-toggle="dropdown">
+                        <span class="bi bi-globe"></span>Language
+                    </button>
+                    <div class="dropdown-menu collapse">
+                        <div class="dropdown-item active">
+                            <span>English</span>
+                        </div>
+                        <div class="dropdown-item">
+                            <span>हिन्दी</span>
+                        </div>
+                    </div>
+
+
+                </div>
+                <div>
+                    <button class="btn btn-danger">Login</button>
+                </div>
+
+
+            </div>
+        </header>
+        <section class="d-flex justify-content-center align-items-center text-center" style="height:500px">
+
+            <div>
+                <p class="main-title">Unlimited Movies TV Shows and more</p>
+
+                <p class="main-subtitle">Watch anywhere. Cancel anytime.</p>
+                <div class="register-title">
+                    <p>Ready to watch? Enter your Email to create or restart your membership.</p>
+                    <div class="input-group input-group-lg">
+                        <input type="email" class="form-control" placeholder="Your Email Address">
+                        <button class="btn btn-danger">
+                            
+                            Get Started
+                            <span class="bi bi-chevron-right"></span>
+                        </button>
+                    </div>
+                </div>
+
+                
+            </div>
+
+
+        </section>
+        <main class="d-flex justify-content-center align-items-center">
+            
+            <div style="width: 700px;">
+                <div class="accordion" id="topics">
+                    <div class="accordion-item mb-3">
+                        <div class="accordion-header">
+        
+                            <button class="accordion-button  bg-dark text-white btn-dark w-100" data-bs-toggle="collapse" data-bs-target="#css">
+                                <h2>What is Netflix?</h2></button>
+                        </div>
+                        <div id="css" data-bs-parent="#topics" class="accordion-body accordion-collapse collapse bg-dark text-white">
+                            <p>Netflix is a streaming service that offers a wide variety of award-winning TV shows, movies, anime, documentaries and more  on thousands of internet-connected devices.
+    
+                                You can watch as much as you want, whenever you want, without a single ad – all for one low monthly price. There's always something new to discover, and new TV shows and movies are added every week!</p>
+                        </div>
+                    </div>
+                    <div class="accordion-item mb-3">
+                        <div class="accordion-header">
+                            <button class="accordion-button btn-dark w-100  bg-dark text-white" data-bs-toggle="collapse" data-bs-target="#html">
+                                <h2>How much Does Netflix Cost?</h2>
+                            </button>
+                        </div>
+                        <div class="accordion-body accordion-collapse collapse bg-dark text-white" id="html" data-bs-parent="#topics">
+                            <p>Watch Netflix on your smartphone, tablet, Smart TV, laptop, or streaming device, all for one fixed monthly fee. Plans range from ₹149 to ₹649 a month. No extra costs, no contracts.
+                            </p>
+                        </div>
+                    </div>
+                    <div class="accordion-item mb-3">
+                        <div class="accordion-heade bg-dark text-white">
+                            <button class="accordion-button btn-dark w-100  bg-dark text-white" data-bs-toggle="collapse" data-bs-target="#js">
+                                <h2>Where can i watch?</h2>
+                            </button>
+                        </div>
+                        <div class="accordion-body accordion-collapse collapse bg-dark text-white" id="js" data-bs-parent="#topics">
+                            <p>Watch anywhere, anytime. Sign in with your Netflix account to watch instantly on the web at netflix.com from your personal computer or on any internet-connected device that offers the Netflix app, including smart TVs, smartphones, tablets, streaming media players and game consoles.
+    
+                                You can also download your favorite shows with the iOS, Android, or Windows 10 app. Use downloads to watch while you're on the go and without an internet connection. Take Netflix with you anywhere.</p>
+                        </div>
+                    </div>            
+                </div>
+            </div>
+    
+        </main>
+
+    </div>
+
+    <script src="/node_modules/jquery/dist/jquery.js"></script>
+    <script src="/node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+</body>
+
 </html>
